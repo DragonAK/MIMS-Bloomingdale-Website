@@ -23,44 +23,10 @@
 		footer p {
 		  color: rgb(233, 227, 253);
 		}
-
-		#about {
-                background-color: blue;
-            }
-
-		#amenities {
-            background-color: rgb(247, 13, 13);
-            }
-
-			#events {
-                background-color: rgb(229, 245, 10);
-            }
-
-			#contact {
-                background-color: rgb(22, 249, 14);
-            }
-
-		body {
-	padding: 25px;
-	background-color: white;
-	color: black;
-	font-size: 25px;
-	}
-
-	.dark-mode {
-	background-color: black;
-	color: white;
-	}
 	  </style>
 	<link rel="stylesheet" href="stylesht.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="blmd_animations.js" ></script>
-	<script>
-		function myFunction() {
-		   var element = document.body;
-		   element.classList.toggle("dark-mode");
-		}
-	</script>
 </head>
 <body>
 	<header>
@@ -75,38 +41,55 @@
 		  <li><a href="#amenities">Amenities</a></li>
 		  <li><a href="#events">Events</a></li>
 		  <li><a href="#contact">Contact Us</a></li>
+		  <li><a href="#Login">Contact Us</a></li>
+		  <li><a href="#notice">Notice</a></li>
+		  <!--<li><a href="#login">Login</a></li>-->
+		  <li><a href="#login-form">Login</a></li>
 		</ul>
 	  </nav>
+	
+		<section id="home">
+			<h2>Welcome to Bloomingdale Community</h2>
+			<p>We are a small community of nine villas located on ECC Road. Our community offers a connection with nature along with friendly neighbours and a feeling like home for our residents. Explore our website to learn more!</p>
+		</section>
+		
+		<section id="about">
+			<h2>About Us</h2>
+			<p>Our community is designed for families, professionals, and retirees looking for a peaceful lifestyle.</p>
+		</section>
+		
+		<section id="amenities">
+			<h2>Amenities</h2>
+			<p>Our community offers a gym.</p>
+		</section>
+		
+		<section id="events">
+			<h2>Events</h2>
+			<p>We host a variety of events throughout the year, including community bonfires and get-togethers. We also host several functions on event days such as Holi, Diwali, Dussehra and New Year's Eve making everyone's day delightful.</p>
+		</section>
 
-	  <button onclick="myFunction()">Toggle dark mode</button>
-	
-	  <section id="home">
-		<h2>Welcome to Bloomingdale Community</h2>
-		<p>We are a small community of nine villas located on ECC Road. Our community offers a connection with nature along with friendly neighbours and a feeling like home for our residents. Explore our website to learn more!</p>
-	  </section>
-	
-	  <section id="about">
-		<h2>About Us</h2>
-		<p>Our community is designed for families, professionals, and retirees looking for a peaceful lifestyle.</p>
-	  </section>
-	
-	  <section id="amenities">
-		<h2>Amenities</h2>
-		<p>Our community offers a gym.</p>
-	  </section>
-	
-	  <section id="events">
-		<h2>Events</h2>
-		<p>We host a variety of events throughout the year, including community bonfires and get-togethers. We also host several functions on event days such as Holi, Diwali, Dussehra and New Year's Eve making everyone's day delightful.</p>
-	  </section>
-	
-	  <section id="contact">
-		<h2>Contact Us</h2>
-		<p>For more information about our community, please contact us at:</p>
-		<ul>
-		  <li>Phone: ####</li>
-		  <li>Email: info@bloomingdale.com</li>
-		  <li>Address: ECC Road, MIMS Bloomingdale, Bengaluru - 560066</li>
+		<section id="notice">
+			<h2>Notice</h2>
+		</section>
+		
+		<section id="login">
+			<form id="login-form" action="#" method="post">
+				<h2>Login</h2>
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" required>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+				<button type="submit">Login</button>
+			  </form>
+		</section>
+
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<p>For more information about our community, please contact us at:</p>
+			<ul>
+			<li>Phone: ####</li>
+			<li>Email: info@bloomingdale.com</li>
+			<li>Address: ECC Road, MIMS Bloomingdale, Bengaluru - 560066</li>
 		</ul>
 	  </section>
 	
