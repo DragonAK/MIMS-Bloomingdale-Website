@@ -23,10 +23,28 @@
 		footer p {
 		  color: rgb(233, 227, 253);
 		}
+
+		body {
+	padding: 25px;
+	background-color: white;
+	color: black;
+	font-size: 25px;
+	}
+
+	.dark-mode {
+	background-color: black;
+	color: white;
+	}
 	  </style>
-	<link rel="stylesheet" href="stylesht.css">
+	<link rel="stylesheet" href="mims.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="blmd_animations.js" ></script>
+	<script src="javas.js" ></script>
+	<script>
+		function myFunction() {
+		   var element = document.body;
+		   element.classList.toggle("dark-mode");
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -43,6 +61,8 @@
 		  <li><a href="#contact">Contact Us</a></li>
 		</ul>
 	  </nav>
+
+	  <button onclick="myFunction()">Toggle dark mode</button>
 	
 	  <section id="home">
 		<h2>Welcome to Bloomingdale Community</h2>
