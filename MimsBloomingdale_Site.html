@@ -23,10 +23,23 @@
 		footer p {
 		  color: rgb(233, 227, 253);
 		}
+
+	/*body {
+	padding: 25px;
+	background-color: white;
+	color: black;
+	font-size: 25px;
+	} */
 	  </style>
 	<link rel="stylesheet" href="stylesht.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="blmd_animations.js" ></script>
+	<!--<script>
+		function myFunction() {
+		   var element = document.body;
+		   element.classList.toggle("dark-mode");
+		}
+	</script> -->
 </head>
 <body>
 	<header>
@@ -40,13 +53,14 @@
 		  <li><a href="#about">About Us</a></li>
 		  <li><a href="#amenities">Amenities</a></li>
 		  <li><a href="#events">Events</a></li>
-		  <li><a href="#contact">Contact Us</a></li>
-		  <li><a href="#Login">Contact Us</a></li>
 		  <li><a href="#notice">Notice</a></li>
 		  <!--<li><a href="#login">Login</a></li>-->
 		  <li><a href="#login-form">Login</a></li>
+		  <li><a href="#contact">Contact Us</a></li>
 		</ul>
 	  </nav>
+
+	  <!--<button onclick="myFunction()">Toggle dark mode</button> -->
 	
 		<section id="home">
 			<h2>Welcome to Bloomingdale Community</h2>
@@ -75,12 +89,17 @@
 		<section id="login">
 			<form id="login-form" action="#" method="post">
 				<h2>Login</h2>
-				<label for="username">Username</label>
-				<input type="text" id="username" name="username" required>
-				<label for="password">Password</label>
-				<input type="password" id="password" name="password" required>
-				<button type="submit">Login</button>
-			  </form>
+				<div class="form-group">
+					<label for="username-input">Username</label>
+					<input type="text" class="form-control" id="username-input" placeholder="Enter your username">
+				</div>
+				<div class="form-group">
+					<label for="password-input">Password</label>
+					<input type="password" class="form-control" id="password-input" placeholder="Enter your password">
+				</div>
+				<script src="https://docs.google.com/spreadsheets/d/1tsHMWAwJT5-y-mIsWhPbQpU7og5dYc6WD4NILZsR5TQ/edit?usp=sharing"></script>
+				<button type="submit" class="btn btn-primary" id="login-button">Login</button>
+			</form>
 		</section>
 
 		<section id="contact">
